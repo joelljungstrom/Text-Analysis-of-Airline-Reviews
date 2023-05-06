@@ -13,6 +13,7 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from ner_model import replace_entities
+from ner_model import replace_airport
 nlp = spacy.load("en_core_web_trf")
 
 
@@ -43,15 +44,18 @@ def preprocess_reviews(review):
     # convert non-english characters to ASCII
     review = unidecode(review)
 
+    # exchange airport codes
+    review = replace_airport(review)
+
     # lowercase
-    review = review.lower()
+    # review = review.lower()
 
     # remove stop words
     # review = [word for word in review.split() if word not in stop_words] MOVE DOWN?
 
     # NER (classify entities and substitute them by a common word, i.e. "MIA" becomes "_airport_"
-    document = nlp(review)
-    review = replace_entities(document)
+    # document = nlp(review)
+    # review = replace_entities(document)
 
     # remove words that only appear once
     #frequency = defaultdict(int)
@@ -78,9 +82,6 @@ def preprocess_reviews(review):
 AirlineReviewsData100['Pre-processed Review'] = AirlineReviewsData100['Review'].apply(preprocess_reviews)
 
 print(AirlineReviewsData100['Pre-processed Review'])
-
-# Left to do:
-# POS tagging (tag words with grammar)
 
 
 
