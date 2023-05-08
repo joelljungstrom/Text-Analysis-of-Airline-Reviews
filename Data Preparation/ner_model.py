@@ -15,18 +15,43 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from spacy.training import Example
+nlp = spacy.load("en_core_web_trf")
 
 # Import Airports/Cities/Countries data
 AirInfo = pd.read_csv('../data/airports_cities_countries.csv', sep = ",") # https://github.com/jpatokal/openflights/blob/master/data/airports.dat
-AirInfo = AirInfo[['airport_name','code']]
+AirInfo = AirInfo[AirInfo['code'].str.match(r'^[A-Z]{3}$')]
+
+# Airport code
+AirInfoCode = AirInfo['code'].tolist()
+
+# Airline name
+AirlineNames = pd.read_csv('../data/AirlineReviewCounts.csv')['AirlineName'].to_list()
+
+# Airport name
+AirInfoName = AirInfo['airport_name'].to_frame()
+AirInfoName = AirInfoName.apply(lambda x: unidecode(x['airport_name']), axis=1)
+AirInfoName = AirInfoName.tolist()
+AirInfoName = [re.sub(r'[^\w\s]+', '', name) for name in AirInfoName]
+
+# City name
+AirInfoCity = AirInfo['city'].to_frame()
+AirInfoCity = AirInfoCity.dropna()
+AirInfoCity = AirInfoCity.apply(lambda x: unidecode(x['city']), axis=1)
+AirInfoCity = AirInfoCity.tolist()
+AirInfoCity = [re.sub(r'[^\w\s]+', '', city) for city in AirInfoCity]
 
 # Import Route from review csv
 RouteInfo = pd.read_csv('../data/airlineReviews.csv')
 RouteInfo = RouteInfo['Route']
 RouteInfo = RouteInfo.to_frame()
 RouteInfo = RouteInfo.dropna()
+RouteInfo = RouteInfo.apply(lambda x: unidecode(x['Route']), axis=1)
+RouteInfo = RouteInfo.tolist()
+RouteInfo = [re.sub(r'[^\w\s]+', '', route) for route in RouteInfo]
 
-nlp = spacy.load("en_core_web_trf")
+# Stop words
+stop_words = list(stopwords.words('english'))
+stop_words = [re.sub(r'[^\w\s]+', '', word) for word in stop_words]
 
 # PC isn't capable of training custom fields to the Spacy model.
 # Blank English model
@@ -68,7 +93,7 @@ def replace_entities(document):
     prev_ent_type = None
     for token in document:
         if token.ent_type_ == prev_ent_type:
-            new_document[-1] += "" + token.text
+            new_document[-1] += " " + token.text
         else:
             if token.ent_type_ == "GPE": # countries/cities/states
                 new_document.append("_location_")
@@ -107,27 +132,34 @@ def replace_entities(document):
             else:
                 new_document.append(token.text)
             prev_ent_type = token.ent_type_
-    return new_document
+    return ' '.join(new_document)
 
 
-airport_pattern = re.compile(r'\b(' + '|'.join(AirInfo['code'] + AirInfo['airport_name']) + r')\b')
-route_pattern = re.compile(r'\b(' + '|'.join([code + r' - ' + code for code in AirInfo['code']]) + r')\b')
+# Create regex statements for possible replacements
+airline_name_pattern = re.compile(r'\b(' + '|'.join(AirlineNames) + r')\b')
+airport_code_pattern = re.compile(r'\b(' + '|'.join(AirInfoCode) + r')\b')
+airport_name_pattern = re.compile(r'\b(' + '|'.join(AirInfoName) + r')\b')
+route_city_pattern_simple = re.compile(r'\b(' + '|'.join(RouteInfo) + r')\b')
+route_code_pattern = re.compile(r'\b(' + '|'.join([code + r'(?:\s+-\s+' + code + r')*(?:\s+(?:via|to)\s+' + code + r'(?:\s+-\s+' + code + r')*)?' for code in AirInfoCode]) + r')\b')
+route_name_pattern = re.compile(r'\b(' + '|'.join([name + r'(?:\s+-\s+' + name + r')*(?:\s+(?:via|to)\s+' + name + r'(?:\s+-\s+' + name + r')*)?' for name in AirInfoName]) + r')\b')
+route_city_pattern = re.compile(r'\b(' + '|'.join([city + r'(?: - ' + city + r')*(?:\s+(?:via|to)\s+' + city + r'(?: - ' + city + r')*)?' for city in AirInfoCity]) + r')\b')
+stop_words_pattern = re.compile(r'\s*\b(' + '|'.join(stop_words) + r')\b\s*')
 
 
 def replace_airport(document):
     new_document = []
-    for i in range(len(document)):
-        document[i] = route_pattern.sub("_route_", document[i])
-        document[i] = airport_pattern.sub("_airport_", document[i])
-    return document
-
-
-
-
-
-
-
-
-
+    for text in document:
+        text = airline_name_pattern.sub("_organization_", text)
+        text = route_city_pattern_simple.sub("_route_", text)
+        text = route_city_pattern.sub("_route_", text)
+        text = route_code_pattern.sub("_route_", text)
+        text = route_name_pattern.sub("_route_", text)
+        text = airport_code_pattern.sub("_airport_", text)
+        text = airport_name_pattern.sub("_airport_", text)
+        text = stop_words_pattern.sub(" ", text)
+        text = re.sub(r'\s+', ' ', text)
+        # print(text)
+        new_document.append(text)
+    return ' '.join(new_document)
 
 
