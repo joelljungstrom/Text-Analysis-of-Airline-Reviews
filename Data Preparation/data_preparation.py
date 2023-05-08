@@ -18,11 +18,11 @@ nlp = spacy.load("en_core_web_trf")
 
 
 # Import Airline Reviews Data
-AirlineReviewsData = pd.read_csv('../data/AirlineReviews.csv')
+AirlineReviewsData = pd.read_csv('././Data/AirlineReviews.csv')
 
 # Remove faulty scraped observations:
 # Observations that do not have an airline name in the Airline column:
-AirlineNames = pd.read_csv('../data/AirlineReviewCounts.csv')['AirlineName'].tolist()
+AirlineNames = pd.read_csv('././Data/AirlineReviewCounts.csv')['AirlineName'].tolist()
 AirlineReviewsData = AirlineReviewsData[AirlineReviewsData['AirlineName'].isin(AirlineNames)]
 # Observations that have N/A in the Review column
 AirlineReviewsData = AirlineReviewsData.dropna(subset=['Review'])
