@@ -18,11 +18,11 @@ nlp = spacy.load("en_core_web_trf")
 
 
 # Import Airline Reviews Data
-AirlineReviewsData = pd.read_csv('././Data/AirlineReviews.csv')
+AirlineReviewsData = pd.read_csv('../Data/AirlineReviews.csv')
 
 # Remove faulty scraped observations:
 # Observations that do not have an airline name in the Airline column:
-AirlineNames = pd.read_csv('././Data/AirlineReviewCounts.csv')['AirlineName'].tolist()
+AirlineNames = pd.read_csv('../Data/AirlineReviewCounts.csv')['AirlineName'].tolist()
 AirlineReviewsData = AirlineReviewsData[AirlineReviewsData['AirlineName'].isin(AirlineNames)]
 # Observations that have N/A in the Review column
 AirlineReviewsData = AirlineReviewsData.dropna(subset=['Review'])
@@ -34,10 +34,7 @@ AirlineReviewsData = AirlineReviewsData.loc[AirlineReviewsData['Review'].apply(l
 AirlineReviewsData10 = AirlineReviewsData.head(10)
 
 # Text pre-processing tools
-# stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
-tokenizer = RegexpTokenizer(r'\w+')
-
 
 # Preprocess each document (i.e. each review)
 def preprocess_reviews(review):
@@ -80,6 +77,8 @@ def preprocess_reviews(review):
 AirlineReviewsData10.loc[:, 'Pre-processed Reviews'] = AirlineReviewsData10['Review'].apply(preprocess_reviews)
 
 print(AirlineReviewsData10['Pre-processed Reviews'])
+
+AirlineReviewsData10.to_csv('././Data/preprocessed_reviews.csv', index = False)
 
 
 

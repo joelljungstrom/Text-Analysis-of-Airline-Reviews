@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Data Preparation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LDA" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Text-Analysis-of-Airline-Reviews" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

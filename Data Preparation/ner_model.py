@@ -18,14 +18,14 @@ from spacy.training import Example
 nlp = spacy.load("en_core_web_trf")
 
 # Import Airports/Cities/Countries data
-AirInfo = pd.read_csv('././Data/airports_cities_countries.csv', sep = ",") # https://github.com/jpatokal/openflights/blob/master/data/airports.dat
+AirInfo = pd.read_csv('../Data/airports_cities_countries.csv', sep=",") # https://github.com/jpatokal/openflights/blob/master/data/airports.dat
 AirInfo = AirInfo[AirInfo['code'].str.match(r'^[A-Z]{3}$')]
 
 # Airport code
 AirInfoCode = AirInfo['code'].tolist()
 
 # Airline name
-AirlineNames = pd.read_csv('././Data/AirlineReviewCounts.csv')['AirlineName'].to_list()
+AirlineNames = pd.read_csv('../Data/AirlineReviewCounts.csv')['AirlineName'].to_list()
 
 # Airport name
 AirInfoName = AirInfo['airport_name'].to_frame()
@@ -41,7 +41,7 @@ AirInfoCity = AirInfoCity.tolist()
 AirInfoCity = [re.sub(r'[^\w\s]+', '', city) for city in AirInfoCity]
 
 # Import Route from review csv
-RouteInfo = pd.read_csv('././Data/AirlineReviews.csv')
+RouteInfo = pd.read_csv('../Data/AirlineReviews.csv')
 RouteInfo = RouteInfo['Route']
 RouteInfo = RouteInfo.to_frame()
 RouteInfo = RouteInfo.dropna()
