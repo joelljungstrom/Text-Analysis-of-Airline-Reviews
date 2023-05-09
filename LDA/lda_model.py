@@ -38,6 +38,6 @@ first_model = LdaModel(corpus = corpus,
                        num_topics = num_topics,
                        passes = passes)
 
-topics = LdaModel.show_topics()
+topics = first_model.show_topics()
 for topic in topics:
     print(topic)

@@ -1,22 +1,22 @@
 AirlineName,Reviews,Slug
 AB Aviation,3,ab-aviation
 Adria Airways,91,adria-airways
-Aegean Airlines,715,aegean-airlines
-Aer Lingus,930,aer-lingus
+Aegean Airlines,720,aegean-airlines
+Aer Lingus,933,aer-lingus
 Aero VIP,3,aero-vip
 Aerocaribbean,3,aerocaribbean
 Aeroflot Russian Airlines,592,aeroflot-russian-airlines
 AeroItalia,1,aeroitalia
 Aerolineas Argentinas,239,aerolineas-argentinas
 Aeromar,9,aeromar
-Aeromexico,655,aeromexico
+Aeromexico,657,aeromexico
 Aerosur,11,aerosur
 Africa World Airlines,9,africa-world-airlines
 Afriqiyah Airways,29,afriqiyah-airways
 Aigle Azur,14,aigle-azur
-Air Algerie,47,air-algerie
+Air Algerie,48,air-algerie
 Air Antilles,3,air-antilles
-Air Arabia,146,air-arabia
+Air Arabia,147,air-arabia
 Air Astana,238,air-astana
 Air Austral,46,air-austral
 Air Bagan,16,air-bagan
@@ -24,9 +24,9 @@ Air Berlin,483,air-berlin
 Air Botswana,23,air-botswana
 Air Burkina,2,air-burkina
 Air Busan,20,air-busan
-Air Cairo,13,air-cairo
-Air Canada,2136,air-canada
-Air Canada rouge,1206,air-canada-rouge
+Air Cairo,14,air-cairo
+Air Canada,2146,air-canada
+Air Canada rouge,1207,air-canada-rouge
 Air Caraibes,24,air-caraibes
 Air China,752,air-china
 Air Corsica,10,air-corsica
@@ -34,12 +34,12 @@ Air Costa,1,air-costa
 Air Cote d'Ivoire,1,air-cote-divoire
 Air Djibouti,2,air-djibouti
 Air Dolomiti,74,air-dolomiti
-Air Europa,466,air-europa
-Air France,1241,air-france
-Air Greenland,15,air-greenland
+Air Europa,470,air-europa
+Air France,1245,air-france
+Air Greenland,16,air-greenland
 Air Iceland Connect,2,air-iceland-connect
-Air India,1103,air-india
-Air India Express,73,air-india-express
+Air India,1118,air-india
+Air India Express,75,air-india-express
 Air Italy,31,air-italy
 Air Juan,23,air-juan
 Air KBZ,9,air-kbz
@@ -52,41 +52,41 @@ Air Malta,174,air-malta
 Air Mauritius,188,air-mauritius
 Air Mediterranee,5,air-mediterranee
 Air Memphis,20,air-memphis
-Air Moldova,42,air-moldova
+Air Moldova,43,air-moldova
 Air Namibia,83,air-namibia
-Air New Zealand,801,air-new-zealand
-Air Niugini,49,air-niugini
+Air New Zealand,808,air-new-zealand
+Air Niugini,51,air-niugini
 Air North Yukon's Airline,3,air-north-yukons-airline
 Air Nostrum,44,air-nostrum
 Air Panama,14,air-panama
 Air Pegasus,4,air-pegasus
 Air Rarotonga,2,air-rarotonga
-Air Serbia,243,air-serbia
-Air Seychelles,73,air-seychelles
+Air Serbia,244,air-serbia
+Air Seychelles,74,air-seychelles
 Air Tahiti Nui,109,air-tahiti-nui
 Air Tanzania,17,air-tanzania
 Air Transat,727,air-transat
 Air Vanuatu,55,air-vanuata
 Air Zimbabwe,24,air-zimbabwe
-AirAsia,872,airasia
-AirAsia India,116,airasia-india
+AirAsia,876,airasia
+AirAsia India,118,airasia-india
 AirAsia Philippines,72,airasia-philippines
 AirAsia X,378,airasia-x
 AirAsia Zest,31,airasia-zest
-airBaltic,251,airbaltic
-airblue,47,air-blue
+airBaltic,252,airbaltic
+airblue,48,air-blue
 Aircalin,40,aircalin
-Airlink,40,airlink
+Airlink,43,airlink
 Airnorth,26,airnorth
 AirSWIFT,2,airswift
-Akasa Air,31,akasa-air
-Alaska Airlines,938,alaska-airlines
+Akasa Air,34,akasa-air
+Alaska Airlines,944,alaska-airlines
 Alitalia,692,alitalia
-Allegiant Air,1885,allegiant-air
-Alliance Air,19,alliance-air
+Allegiant Air,1893,allegiant-air
+Alliance Air,21,alliance-air
 Alliance Airlines,5,alliance-airlines
 Amaszonas,16,amaszonas
-American Airlines,5483,american-airlines
+American Airlines,5509,american-airlines
 American Eagle,159,american-eagle
 ANA All Nippon Airways,557,ana-all-nippon-airways
 AnadoluJet,21,anadolujet
@@ -96,29 +96,29 @@ Arik Air,54,arik-air
 Arkefly,40,arkefly
 Arkia Israeli Airlines,24,arkia-israeli
 Armenia Air Company,2,armenia-air-company
-Asiana Airlines,496,asiana-airlines
+Asiana Airlines,497,asiana-airlines
 ASKY Airlines,23,asky-airlines
 ATA Airlines,2,ata-airlines
 Atlantic Airways,10,atlantic-airways
 Atlasglobal,75,atlasjet-airlines
 Auric Air,1,auric-air
 Aurigny Air,61,aurigny-air
-Austrian Airlines,695,austrian-airlines
-Avelo Airlines,67,avelo-airlines
-Avianca,608,avianca
+Austrian Airlines,699,austrian-airlines
+Avelo Airlines,71,avelo-airlines
+Avianca,615,avianca
 Avianca Brazil,22,avianca-brasil
 Avianca Ecuador,30,aerogal-aerolineas-galapagos
 Avior Airlines,9,avior-airlines
-Azerbaijan Airlines,67,azerbaijan-airlines
+Azerbaijan Airlines,68,azerbaijan-airlines
 Azul Airlines,88,azul-linhas-aereas-brasileiras
 Azur Air Germany,2,azur-air-germany
 BA CityFlyer,72,ba-cityflyer
 Badr Airlines,1,badr-airlines
 Bahamasair,56,bahamasair
-Bamboo Airways,33,bamboo-airways
-Bangkok Airways,401,bangkok-airways
+Bamboo Airways,34,bamboo-airways
+Bangkok Airways,404,bangkok-airways
 Bassaka Air,9,bassaka-air
-Batik Air,106,batik-air
+Batik Air,110,batik-air
 Beijing Capital Airlines,5,beijing-capital-airlines
 Belavia,45,belavia
 Berjaya Air,12,berjaya-air
@@ -131,14 +131,14 @@ Blue Air,142,blue-air
 Blue Islands,48,blue-islands
 Blue Panorama Airlines,35,blue-panorama-airlines
 Blue1,27,blue1
-Bluebird Airways,4,bluebird-airways
+Bluebird Airways,6,bluebird-airways
 bmi Regional,58,bmi-regional
 Boliviana de Aviacion,23,boliviana-de-aviacin
 BoraJet,1,borajet
 Boutique Air,38,boutique-air
-Breeze Airways,108,breeze-airways
-British Airways,3531,british-airways
-Brussels Airlines,525,brussels-airlines
+Breeze Airways,125,breeze-airways
+British Airways,3541,british-airways
+Brussels Airlines,526,brussels-airlines
 Buddha Air,14,buddha-air
 Bulgaria Air,113,bulgaria-air
 Buraq Air,1,buraq
@@ -150,24 +150,24 @@ Cambodia Bayon Airlines,1,cambodia-bayon-airlines
 Canadian North,7,canadian-north
 Canaryfly,6,canaryfly
 Cape Air,39,cape-air
-Caribbean Airlines,101,caribbean-airlines
+Caribbean Airlines,102,caribbean-airlines
 Carpatair,10,carpatair
 Cathay Dragon,62,cathay-dragon
-Cathay Pacific Airways,1392,cathay-pacific-airways
-Cayman Airways,23,cayman-airways
-Cebu Pacific,358,cebu-pacific
+Cathay Pacific Airways,1394,cathay-pacific-airways
+Cayman Airways,24,cayman-airways
+Cebu Pacific,363,cebu-pacific
 CemAir,2,cemair
 Central Mountain Air,11,central-mountain-air
-China Airlines,449,china-airlines
-China Eastern Airlines,664,china-eastern-airlines
-China Southern Airlines,1968,china-southern-airlines
+China Airlines,450,china-airlines
+China Eastern Airlines,665,china-eastern-airlines
+China Southern Airlines,1970,china-southern-airlines
 China United Airlines,5,china-united-airlines
 Citilink,60,citilink
 CityJet,100,cityjet
 Coastal Aviation,4,coastal-aviation
 Cobalt,18,cobalt
 Comair,50,comair
-Condor Airlines,400,condor-airlines
+Condor Airlines,404,condor-airlines
 Conviasa,5,conviasa
 Copa Airlines,387,copa-airlines
 Corendon Airlines,46,corendon-airlines
@@ -178,7 +178,7 @@ Cubana Airlines,102,cubana-airlines
 Cyprus Airways,10,cyprus-airways
 Danish Air Transport,5,danish-air
 Darwin Airline,40,darwin
-Delta Air Lines,2747,delta-air-lines
+Delta Air Lines,2770,delta-air-lines
 Dimonim Air,1,dimonim-air
 Dniproavia,8,dniproavia
 Dragonair,174,dragonair
@@ -186,73 +186,73 @@ Druk Air,19,druk-air
 Dynamic International Airways,1,dynamic-international-airways
 Eastar Jet,14,eastarjet
 Eastern Airlines,2,eastern-airlines
-Eastern Airways,61,eastern-airways
+Eastern Airways,62,eastern-airways
 Easyfly,7,easyfly
-easyJet,1415,easyjet
+easyJet,1421,easyjet
 Edelweiss Air,100,edelweiss-air
-Egyptair,441,egyptair
-El Al Israel Airlines,282,el-al-israel-airlines
+Egyptair,446,egyptair
+El Al Israel Airlines,283,el-al-israel-airlines
 Ellinair,14,ellinair
-Emirates,2241,emirates
+Emirates,2254,emirates
 Eritrean Airlines,6,eritrean-airlines
 Ernest Airlines,4,ernest-airlines
 Estonian Air,44,estonian-air
-Ethiopian Airlines,558,ethiopian-airlines
-Etihad Airways,1674,etihad-airways
+Ethiopian Airlines,561,ethiopian-airlines
+Etihad Airways,1676,etihad-airways
 euroAtlantic Airways,15,euroatlantic-airways
 Europe Airpost,1,europe-airpost
-Eurowings,413,eurowings
-EVA Air,621,eva-air
+Eurowings,415,eurowings
+EVA Air,625,eva-air
 Evelop Airlines,6,evelop-airlines
 EWA Air,1,ewa-air
 Far Eastern Air Transport,4,far-eastern
 fastjet,33,fastjet
 Felix Airways,2,felix-airways
 Fiji Airways,294,fiji-airways
-Finnair,852,finnair
+Finnair,855,finnair
 Firefly,72,firefly
-Flair Airlines,797,flair-airlines
+Flair Airlines,818,flair-airlines
 Fly540.com,34,fly540-com
 flyadeal,19,flyadeal
 FlyArystan,6,flyarystan
 flybe,4,flybe
-flydubai,370,flydubai
+flydubai,376,flydubai
 Flynas,52,flynas
 FLYONE,8,flyone
-FlySafair,106,flysafair
+FlySafair,107,flysafair
 FMI Air,2,fmi-air
-Freebird Airlines,50,free-bird
-French Bee,65,french-bee
-Frontier Airlines,3087,frontier-airlines
-Garuda Indonesia,870,garuda-indonesia
+Freebird Airlines,51,free-bird
+French Bee,66,french-bee
+Frontier Airlines,3136,frontier-airlines
+Garuda Indonesia,873,garuda-indonesia
 Georgian Airways,52,georgian-airways
 Germania Airline,19,germania-airline
 Germanwings,145,germanwings
-Go First,177,go-first
+Go First,191,go-first
 GoAir,227,goair
 Gol Transportes Aéreos,80,gol
 Golden Myanmar Airlines,3,golden-myanmar-airlines
 Grand Cru Airlines,1,grand-cru-airlines
 Greater Bay Airlines,4,greater-bay-airlines
-Gulf Air,361,gulf-air
+Gulf Air,362,gulf-air
 Hainan Airlines,402,hainan-airlines
-Hawaiian Airlines,499,hawaiian-airlines
+Hawaiian Airlines,507,hawaiian-airlines
 Helvetic Airways,29,helvetic
 Henan Airlines,1,henan-airlines
 Hi Fly,22,hi-fly
 Himalaya Airlines,1,himalaya-airlines
 HiSky,3,hisky
 HK Express,87,hong-kong
-Hong Kong Airlines,145,hong-kong-airlines
+Hong Kong Airlines,146,hong-kong-airlines
 HOP!,13,hop
 Horizon Air,25,horizon-air
 Hunnu Air,1,hunnu-air
-Iberia,847,iberia
-Iberia Express,65,iberia-express
+Iberia,852,iberia
+Iberia Express,68,iberia-express
 Icelandair,662,icelandair
-IndiGo,430,indigo-airlines
+IndiGo,435,indigo-airlines
 Insel Air,76,insel-air
-Intercaribbean Airways,6,intercaribbean-airways
+Intercaribbean Airways,7,intercaribbean-airways
 Interjet,214,interjet
 InterSky,8,intersky
 Iran Air,66,iran-air
@@ -260,8 +260,8 @@ Iran Aseman Airlines,7,iran-aseman
 Iraqi Airways,3,iraqi-airways
 Island Air,34,island
 Israir Airlines,23,israir-airlines
-ITA Airways,73,ita-airways
-Japan Airlines,391,japan-airlines
+ITA Airways,77,ita-airways
+Japan Airlines,392,japan-airlines
 Jazeera Airways,49,jazeera-airways
 Jazz,5,jazz
 JC International Airlines,1,jc-international-airlines
@@ -269,10 +269,10 @@ Jeju Air,22,jeju-air
 Jet Airways,1060,jet-airways
 Jet2.com,564,jet2-com
 Jetairfly,22,jetairfly
-Jetblue Airways,1463,jetblue-airways
+Jetblue Airways,1475,jetblue-airways
 JetSmart,6,jetsmart
-Jetstar Airways,1233,jetstar-airways
-Jetstar Asia,197,jetstar-asia
+Jetstar Airways,1236,jetstar-airways
+Jetstar Asia,198,jetstar-asia
 Jetstar Japan,38,jetstar-japan
 Jetstar Pacific,110,jetstar-pacific
 JetsuiteX,1,jetsuitex
@@ -284,12 +284,12 @@ Kam Air,28,kam-air
 Kan Air,2,kan-air
 Karthago Airlines,38,karthago-airlines
 KD Air,1,kd-air
-Kenya Airways,413,kenya-airways
+Kenya Airways,414,kenya-airways
 Kish Airlines,3,kish-air
-KLM Royal Dutch Airlines,1464,klm-royal-dutch-airlines
-Korean Air,551,korean-air
+KLM Royal Dutch Airlines,1471,klm-royal-dutch-airlines
+Korean Air,552,korean-air
 Kulula,85,kulula
-Kuwait Airways,301,kuwait-airways
+Kuwait Airways,302,kuwait-airways
 La Compagnie,45,la-compagnie
 LAM Mozambique,32,lam-mozambique-airlines
 LAN Airlines,332,lan-airlines
@@ -305,18 +305,18 @@ LIAT,119,liat
 Libyan Airlines,16,libyan-airlines
 Lion Air,200,lion-air
 Loch Lomond Seaplanes,2,loch-lomond-seaplanes
-Loganair,31,loganair
-LOT Polish Airlines,640,lot-polish-airlines
+Loganair,32,loganair
+LOT Polish Airlines,641,lot-polish-airlines
 Lubeck Air,2,lubeck-air
 Lucky Air,7,lucky-air
-Lufthansa,2197,lufthansa
+Lufthansa,2203,lufthansa
 Luxair,86,luxair
-Lynx Air,152,lynx-air
+Lynx Air,166,lynx-air
 Mack Air,1,mack-air
 Madagasikara Airways,2,madagasikara-airways
 Mahan Air,30,mahan-air
 Malawian Airlines,12,malawian-airlines
-Malaysia Airlines,1323,malaysia-airlines
+Malaysia Airlines,1326,malaysia-airlines
 Maldivian,4,maldivian
 Malindo Air,350,malindo-air
 Malmo Aviation,9,malm-aviation
@@ -347,16 +347,16 @@ Nepal Airlines,29,nepal-airlines
 NextJet,1,nextjet
 NIKI,42,niki
 Nile Air,1,nile-air
-Nok Air,139,nok-air
+Nok Air,141,nok-air
 NokScoot,2,nokscoot
 Nordavia,4,nordavia
 Nordic Regional Airlines,1,nordic-regional-airlines
 Nordica,3,nordica
 NordStar,1,nordstar
 Nordwind Airlines,2,nordwind-airlines
-Norse Atlantic Airways,17,norse-atlantic-airways
-Norwegian,1306,norwegian
-Nouvelair,13,nouvelair
+Norse Atlantic Airways,24,norse-atlantic-airways
+Norwegian,1307,norwegian
+Nouvelair,14,nouvelair
 Novair,1,novair
 Novoair,2,novoair
 Okay Airways,4,okay-airways
@@ -366,43 +366,43 @@ Omni Air International,11,omni-air-international
 Onur Air,133,onur-air
 Openskies,65,openskies
 Orient Thai Airlines,41,orient-thai
-Pacific Airlines,10,pacific-airlines
-Pakistan Intl Airlines,160,pia-pakistan-international-airlines
-PAL Express,8,pal-express
+Pacific Airlines,11,pacific-airlines
+Pakistan Intl Airlines,161,pia-pakistan-international-airlines
+PAL Express,9,pal-express
 Pan Pacific Airlines,1,pan-pacific-airlines
 Passaredo,3,passaredo-linhas-aereas
 Passion Air,3,passion-air
 PAWA Dominicana,2,pawa-dominicana
 Peach Aviation,60,peach-aviation
-Pegasus Airlines,388,pegasus-airlines
+Pegasus Airlines,390,pegasus-airlines
 PenAir,3,penair
 Peruvian Airlines,43,peruvian-airlines
 Petroleum Air Services,3,petroleum-air-services
-Philippine Airlines,810,philippine-airlines
+Philippine Airlines,815,philippine-airlines
 Phuket Air,40,phuket-air
-PLAY,155,play
+PLAY,156,play
 Pobeda Airlines,38,pobeda-airlines
-Porter Airlines,325,porter-airlines
+Porter Airlines,326,porter-airlines
 Precision Air,83,precision
 Primera Air,7,primera-air
 Privilege Style,13,privilege-style
-Qantas Airways,1769,qantas-airways
+Qantas Airways,1775,qantas-airways
 QantasLink,120,qantaslink
-Qatar Airways,2185,qatar-airways
+Qatar Airways,2196,qatar-airways
 Qazaq Air,2,qazaq-air
 Ravn Alaska,14,era-alaska
 Ravn Alaska,9,ravn-alaska
 Red Wings Airlines,4,red-wings-airlines
 Regent Airways,22,regent-airways
 Regional Express,87,regional-express
-Rex Airlines,41,rex-airlines
+Rex Airlines,44,rex-airlines
 Rhein-Neckar Air,1,rhein-neckar-air
 Rossiya Airlines,44,rossiya-airlines
 Royal Air Maroc,320,royal-air-maroc
 Royal Brunei Airlines,352,royal-brunei-airlines
-Royal Jordanian Airlines,364,royal-jordanian-airlines
+Royal Jordanian Airlines,365,royal-jordanian-airlines
 Rwandair,89,rwandair
-Ryanair,2145,ryanair
+Ryanair,2157,ryanair
 S7 Siberia Airlines,66,s7-siberia-airlines
 SA Express,45,sa-express
 Safarilink,2,safarilink
@@ -410,13 +410,13 @@ Safi Airways,10,safi-airways
 Salam Air,6,salam-air
 Sansa Airlines,4,sansa-airlines
 Santa Barbara Airlines,25,santa-barbara
-SAS Scandinavian,839,sas-scandinavian-airlines
+SAS Scandinavian,844,sas-scandinavian-airlines
 SATA Air Azores,149,sata-air-azores
-SATA International,108,sata-internacional
+SATA International,109,sata-internacional
 SATENA,2,satena
-Saudi Arabian Airlines,392,saudi-arabian-airlines
+Saudi Arabian Airlines,394,saudi-arabian-airlines
 SCAT Airlines,4,scat-airlines
-Scoot,623,scoot
+Scoot,627,scoot
 Seaborne Airlines,15,seaborne-airlines
 SereneAir,10,sereneair
 Shaheen Air,12,shaheen-air
@@ -425,9 +425,9 @@ Shanghai Airlines,72,shanghai-airlines
 Shenzhen Airlines,42,shenzhen-airlines
 Sichuan Airlines,49,sichuan-airlines
 SilkAir,215,silkair
-Silver Airways,163,silver-airways
-Singapore Airlines,1432,singapore-airlines
-Sky Airline,47,sky-airline
+Silver Airways,166,silver-airways
+Singapore Airlines,1439,singapore-airlines
+Sky Airline,49,sky-airline
 Sky Express Airlines,70,sky-express-airlines
 Skybus,3,skybus
 Skymark Airlines,17,skymark-airlines
@@ -443,25 +443,25 @@ Sol Líneas Aéreas,1,sol-lineas-aereas
 Solomon Airlines,9,solomon-airlines
 Somon Air,3,somon-air
 South African Airways,437,south-african-airways
-Southwest Airlines,1701,southwest-airlines
-SpiceJet,553,spicejet
-Spirit Airlines,4781,spirit-airlines
+Southwest Airlines,1716,southwest-airlines
+SpiceJet,555,spicejet
+Spirit Airlines,4829,spirit-airlines
 Spring Airlines,63,spring
-SriLankan Airlines,591,srilankan-airlines
+SriLankan Airlines,595,srilankan-airlines
 Sriwijaya Air,55,sriwijaya-air
 Star Peru,20,star-per
 StarFlyer,5,starflyer
 Sudan Airways,1,sudan-airways
-Sun Country Airlines,337,sun-country-airlines
+Sun Country Airlines,340,sun-country-airlines
 Sun-Air,2,sun-air
-SunExpress,57,sun-express
-Sunwing Airlines,712,sunwing-airlines
+SunExpress,59,sun-express
+Sunwing Airlines,715,sunwing-airlines
 Suparna Airlines,1,suparna-airlines
 Super Air Jet,7,super-air-jet
 Surinam Airways,23,surinam-airways
 SVG Air,1,svg-air
-Swiss Intl Air Lines,960,swiss-international-air-lines
-Swoop,702,swoop
+Swiss Intl Air Lines,967,swiss-international-air-lines
+Swoop,707,swoop
 SyrianAir,23,syrianair
 T'Way Air,14,tway-air
 TAAG Angola Airlines,57,taag-angola-airlines
@@ -473,13 +473,13 @@ Tailwind Airlines,3,tailwind-airlines
 TAM Airlines,226,tam-airlines
 TAME,37,tame
 Tame Línea Aérea Del Ecuador,12,tame-linea-aerea-del-ecuador
-TAP Portugal,1376,tap-portugal
+TAP Portugal,1387,tap-portugal
 TAR Aerolineas,9,tar-aerolineas
 TAROM Romanian,171,tarom-romanian-airlines
-Thai AirAsia,91,thai-airasia
-Thai Airways,974,thai-airways
-Thai Lion Air,150,thai-lion-air
-Thai Smile Airways,247,thai-smile-airways
+Thai AirAsia,93,thai-airasia
+Thai Airways,979,thai-airways
+Thai Lion Air,151,thai-lion-air
+Thai Smile Airways,248,thai-smile-airways
 Thomas Cook Airlines,642,thomas-cook-airlines
 Thomas Cook Airlines Belgium,5,thomas-cook-belgium-airlines-customer
 Thomas Cook Airlines Scandinavia,9,thomas-cook-airlines-scandinavia
@@ -489,23 +489,24 @@ Tibet Airlines,1,tibet-airlines
 Tigerair,184,tigerair
 Tigerair Australia,506,tigerair-australia
 Tigerair Taiwan,7,tigerair-taiwan
-Titan Airways,29,titan-airways
+Titan Airways,30,titan-airways
 Transaero Airlines,55,transaero-airlines
 TransAsia Airways,7,transasia-airways
-Transavia,234,transavia
+Transavia,235,transavia
+TransNusa,1,transnusa
 Trigana Air,2,trigana-air
 Tropic Air Belize,4,tropic-air-belize
-TUI Airways,67,tui-airways
+TUI Airways,68,tui-airways
 TUIfly,64,tuifly
 TUIfly Nordic,1,tuifly-nordic
 Tunisair,80,tunisair
-Turkish Airlines,2286,turkish-airlines
+Turkish Airlines,2298,turkish-airlines
 Turkmenistan Airlines,40,turkmenistan-airlines
 TUS Airways,2,tus-airways
 Uganda Airlines,3,uganda-airlines
 Ukraine International,391,ukraine-international-airlines
 Ultra Air,3,ultra-air
-United Airlines,4477,united-airlines
+United Airlines,4506,united-airlines
 UP by El Al,4,up-by-el-al
 Ural Airlines,19,ural-airlines
 US Airways,460,us-airways
@@ -515,27 +516,27 @@ Uzbekistan Airways,69,uzbekistan-airways
 V Air,7,v-air
 Vanilla Air,13,vanilla-air
 ViaAir,11,viaair
-VietJet Air,543,vietjetair
-Vietnam Airlines,657,vietnam-airlines
+VietJet Air,544,vietjetair
+Vietnam Airlines,658,vietnam-airlines
 Virgin America,311,virgin-america
 Virgin Atlantic,820,virgin-atlantic-airways
 Virgin Australia,947,virgin-australia
-Vistara,208,vistara
+Vistara,212,vistara
 Viva Air,70,viva-air
-VivaAerobús,117,vivaaerobus
+VivaAerobús,121,vivaaerobus
 VivaColombia,48,vivacolombia
 VLM Airlines,46,vlm-airlines
 Volaris,389,volaris
-Volotea,261,volotea
+Volotea,263,volotea
 Voyage Air,1,voyage-air
-Vueling Airlines,1167,vueling-airlines
+Vueling Airlines,1172,vueling-airlines
 Wamos Air,15,wamos-air
-WestJet Airlines,938,westjet
+WestJet Airlines,942,westjet
 Wideroe,22,wideroe
 Winair,6,winair
 Wingo,20,wingo
-Wings Air,20,wings-air
-Wizz Air,1254,wizz-air
+Wings Air,21,wings-air
+Wizz Air,1265,wizz-air
 World2Fly,3,world2fly
 WOW air,579,wow-air
 Xiamen Airlines,119,xiamen-airlines
@@ -545,4 +546,4 @@ Yangon Airways,4,yangon-airways
 Yemenia,24,yemenia
 Yeti Airlines,5,yeti-airlines
 Zambia Airways,1,zambia-airways
-ZIPAIR,32,zipair
+ZIPAIR,37,zipair

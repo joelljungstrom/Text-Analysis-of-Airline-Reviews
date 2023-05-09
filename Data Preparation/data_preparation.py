@@ -5,6 +5,8 @@ import numpy as np
 import re
 import spacy
 import nltk
+import swifter
+from multiprocessing import Pool
 from unidecode import unidecode
 from collections import defaultdict
 from gensim import corpora
@@ -22,19 +24,20 @@ AirlineReviewsData = pd.read_csv('../Data/AirlineReviews.csv')
 
 # Remove faulty scraped observations:
 # Observations that do not have an airline name in the Airline column:
-AirlineNames = pd.read_csv('../Data/AirlineReviewCounts.csv')['AirlineName'].tolist()
-AirlineReviewsData = AirlineReviewsData[AirlineReviewsData['AirlineName'].isin(AirlineNames)]
+AirlineSlug = pd.read_csv('../Data/AirlineReviewCounts.csv', usecols=['Slug'])['Slug'].tolist()
+AirlineReviewsData = AirlineReviewsData[AirlineReviewsData['Slug'].isin(AirlineSlug)]
 # Observations that have N/A in the Review column
 AirlineReviewsData = AirlineReviewsData.dropna(subset=['Review'])
 # Observations that do not have string data type in Review column
 AirlineReviewsData = AirlineReviewsData.loc[AirlineReviewsData['Review'].apply(lambda x: isinstance(x, str))]
-# These changes brought us from 128,555 reviews to 74,079 reviews (2023-05-04)
+# These changes brought us from 129,455 reviews to 128,631 reviews (2023-05-09)
 
 # For test purposes of the code, run it with only the first 10 observations to make sure code is good to be deployed on full data set
 AirlineReviewsData10 = AirlineReviewsData.head(10)
 
 # Text pre-processing tools
 lemmatizer = WordNetLemmatizer()
+
 
 # Preprocess each document (i.e. each review)
 def preprocess_reviews(review):
@@ -74,7 +77,9 @@ def preprocess_reviews(review):
     return review
 
 
-AirlineReviewsData10.loc[:, 'Pre-processed Reviews'] = AirlineReviewsData10['Review'].apply(preprocess_reviews)
+AirlineReviewsData10['Pre-processed Reviews'] = AirlineReviewsData10['Review'].swifter.apply(preprocess_reviews)
+
+#AirlineReviewsData10.loc[:, 'Pre-processed Reviews'] = AirlineReviewsData10['Review'].apply(preprocess_reviews)
 
 print(AirlineReviewsData10['Pre-processed Reviews'])
 
