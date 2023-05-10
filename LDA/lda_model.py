@@ -33,10 +33,10 @@ corpus = [dictionary.doc2bow(review) for review in review] # doc2bow counts the 
 num_topics = 9
 passes = 10
 
-first_model = LdaModel(corpus = corpus,
-                       id2word = dictionary,
-                       num_topics = num_topics,
-                       passes = passes)
+first_model = LdaModel(corpus=corpus,
+                       id2word=dictionary,
+                       num_topics=num_topics,
+                       passes=passes)
 
 topics = first_model.show_topics()
 for topic in topics:

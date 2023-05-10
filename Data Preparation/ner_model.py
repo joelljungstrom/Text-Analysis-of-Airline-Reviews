@@ -15,7 +15,7 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from spacy.training import Example
-nlp = spacy.load("en_core_web_trf")
+nlp = spacy.load("en_core_web_md")
 
 # Import Airports/Cities/Countries data
 AirInfo = pd.read_csv('../Data/airports_cities_countries.csv', sep=",") # https://github.com/jpatokal/openflights/blob/master/data/airports.dat
@@ -149,13 +149,13 @@ stop_words_pattern = re.compile(r'\s*\b(' + '|'.join(stop_words) + r')\b\s*')
 def replace_airport(document):
     new_document = []
     for text in document:
-        text = airline_name_pattern.sub("_organization_", text)
-        text = route_city_pattern_simple.sub("_route_", text)
-        text = route_city_pattern.sub("_route_", text)
-        text = route_code_pattern.sub("_route_", text)
-        text = route_name_pattern.sub("_route_", text)
-        text = airport_code_pattern.sub("_airport_", text)
-        text = airport_name_pattern.sub("_airport_", text)
+        text = airline_name_pattern.sub("organization", text)
+        text = route_city_pattern_simple.sub("route", text)
+        text = route_city_pattern.sub("route", text)
+        text = route_code_pattern.sub("route", text)
+        text = route_name_pattern.sub("route", text)
+        text = airport_code_pattern.sub("airport", text)
+        text = airport_name_pattern.sub("airport", text)
         text = stop_words_pattern.sub(" ", text)
         text = re.sub(r'\s+', ' ', text)
         # print(text)
