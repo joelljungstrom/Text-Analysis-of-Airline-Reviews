@@ -7,8 +7,10 @@ import spacy
 import nltk
 import swifter
 import time
+import statistics
 import dask.dataframe as dd
 import multiprocessing
+import matplotlib.pyplot as plt
 from dask import delayed, compute
 from multiprocessing import Pool
 from unidecode import unidecode
@@ -35,6 +37,7 @@ AirlineReviewsData = AirlineReviewsData[AirlineReviewsData['Slug'].isin(AirlineS
 AirlineReviewsData = AirlineReviewsData.dropna(subset=['Review'])
 # Observations that do not have string data type in Review column
 AirlineReviewsData = AirlineReviewsData.loc[AirlineReviewsData['Review'].apply(lambda x: isinstance(x, str))]
+AirlineReviewsData.to_csv('../Data/AirlineReviewsData.csv', index=False)
 # These changes brought us from 129,455 reviews to 128,631 reviews (2023-05-09)
 
 # For test purposes of the code, run it with only the first 100 observations to make sure code is good to be deployed on full data set
@@ -110,3 +113,7 @@ for i in range(len(dfs)):
 
 end_time = time.time()
 print(f"Elapsed time: {end_time - start_time:.2f} seconds")
+
+# replace missing "Overall Score" scores (4,330 occurrences, 3.37%)
+rating_replace_value = np.nanmean(AirlineReviewsData["OverallScore"]).round() # 4.5... rounded to 5
+AirlineReviewsData["OverallScore"].fillna(rating_replace_value, inplace=True)
